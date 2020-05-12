@@ -11,7 +11,7 @@ export class DemoPromise {
         this.promiseState = 'pending';
     }
     then(onFulfilled, onRejected) {
-        let returnValue = new Promise(); // [new]
+        let returnValue = new DemoPromise(); // [new]
         let self = this;
 
         let fulfilledTask;
